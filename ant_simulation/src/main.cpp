@@ -3,7 +3,7 @@
 
 #include "simulation/simulation.hpp"
 
-int main(int argc, char* argv[])
+int main()
 {
     std::cout << "Initializing simulation..." << std::endl;
 
@@ -28,6 +28,7 @@ int main(int argc, char* argv[])
         simulation.step();
 
         window.clear();
+        simulation.render();
         window.display();
     }
 
